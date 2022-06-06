@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bfeb7efcd6eb47c49bf3dc0820eeee00
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - toyImage: {fileID: 21300000, guid: c7d832bc4dd02034a8f8c5175fc400da, type: 3}
+  - drinkImage: {fileID: 21300000, guid: 994c8a40475138840941ca67fc398167, type: 3}
+  - sockImage: {fileID: 21300000, guid: d5322e88857fe56459373af872c901a2, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
