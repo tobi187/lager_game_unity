@@ -21,7 +21,7 @@ public class SpawnBoxes : MonoBehaviour
         b.transform.position = new Vector2(screenBounds.x * -2, 0.85f);
     }
 
-    IEnumerator Goboxes()
+    private IEnumerator Goboxes()
     {
         while (true)
         {

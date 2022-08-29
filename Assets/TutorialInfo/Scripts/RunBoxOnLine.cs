@@ -26,7 +26,7 @@ public class RunBoxOnLine : MonoBehaviour
         transform.Translate(_speed * Time.deltaTime, 0, 0);
         if (transform.position[0] > screenBounds.x)
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 }
