@@ -13,7 +13,7 @@ public class ShowRanddomSprite : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var randomNum = Random.Range(0, 4);
+        var randomNum = Random.Range(0, 3);
         _currentComponent = GetComponent<SpriteRenderer>();
         var currSprite = new Sprite[] { toyImage, drinkImage, sockImage }[randomNum];
         

@@ -7,10 +7,12 @@ public class RunBoxOnLine : MonoBehaviour
     [SerializeField] private float _speed;
     private BoxCollider2D _boxCollider;
     private Vector2 screenBounds;
+    TrackScore scoreBoard;
 
     // Start is called before the first frame update
     void Start()
     {
+        scoreBoard = FindObjectOfType<TrackScore>();
         _boxCollider = GetComponent<BoxCollider2D>();
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
@@ -26,6 +28,7 @@ public class RunBoxOnLine : MonoBehaviour
         transform.Translate(_speed * Time.deltaTime, 0, 0);
         if (transform.position[0] > screenBounds.x)
         {
+            scoreBoard.IncrementScore();
             Destroy(gameObject);
         }
     }
